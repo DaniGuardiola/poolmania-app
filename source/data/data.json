@@ -1,0 +1,91 @@
+[{
+    "title": "Asociación Gallega de Pool",
+    "city": "Pontevedra",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/asociacion-gallega-pool.gif"
+}, {
+    "title": "ASOCIACION DE FOMENTO EMILIO MITRE",
+    "city": "Ciudad de Buenos Aires",
+    "country": "Argentina",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "Asociación de Billar Teo",
+    "city": "La Coruña",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/asociacion-billar-teo.jpg"
+}, {
+    "title": "Asociacion de Billar Cochabamba",
+    "city": "Cochabamba",
+    "country": "Bolivia",
+    "premium": false,
+    "image": "assets/club-list/tmp/cochabamba.jpg"
+}, {
+    "title": "Asociación Cordobesa de Billar",
+    "city": "Córdoba",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/cordobesa.jpg"
+}, {
+    "title": "ASOCIACIÓN BILLAR PALMA",
+    "city": "Islas Baleares",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "ARCIS BILLARD CLUB",
+    "city": "Champagne-Ardenne",
+    "country": "Francia",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "AQUELARRE",
+    "city": "Asturias",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/aquelarre.jpg"
+}, {
+    "title": "APB",
+    "city": "Barcelona",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/apb.gif"
+}, {
+    "title": "AMICALE DE BILLARD ECKBOLSHEIM",
+    "city": "Alsace",
+    "country": "Francia",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "American Family Billiards",
+    "city": "Rhode Island",
+    "country": "Estados Unidos",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "AMBOAN",
+    "city": "Asturias",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/amboan.jpg"
+}, {
+    "title": "Aiea Cue",
+    "city": "Hawaii",
+    "country": "Estados Unidos",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "Action Billiards",
+    "city": "Alaska",
+    "country": "Estados Unidos",
+    "premium": false,
+    "image": "assets/club-list/no-image.png"
+}, {
+    "title": "Academia de Snooker Westbury",
+    "city": "Madrid",
+    "country": "España",
+    "premium": false,
+    "image": "assets/club-list/tmp/snooker.jpeg"
+}]

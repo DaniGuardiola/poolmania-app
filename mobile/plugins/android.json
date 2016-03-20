@@ -1,0 +1,63 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-background-app": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-blob-constructor-polyfill": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-chrome-apps-bootstrap": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-chrome-apps-common": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-chrome-apps-i18n": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-chrome-apps-navigation": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-chrome-apps-runtime": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-chrome-apps-storage": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-customevent-polyfill": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "cordova-plugin-xhr-blob-polyfill": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        },
+        "org.chromium.cca-hooks": {
+            "PACKAGE_NAME": "com.your.company.Calculator"
+        }
+    },
+    "dependent_plugins": {}
+}

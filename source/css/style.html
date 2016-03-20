@@ -1,0 +1,113 @@
+<style is="custom-style">
+body,
+html {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--paper-grey-200);
+}
+
+#main-toolbar {
+    z-index: 1;
+    transition: margin 0.5s, width 0.5s;
+    @apply(--shadow-elevation-2dp);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#main-toolbar .title {
+    margin-left: 0;
+}
+
+.club-list-item {
+    @apply(--layout-horizontal);
+    @apply(--shadow-elevation-2dp);
+    margin: 8px;
+}
+
+iron-list {
+    --iron-list-items-container: {
+        margin: 8px;
+    }
+    ;
+}
+
+.club-list-item .image {
+    width: 100px;
+    height: 170px;
+    background: url('./donuts.png');
+    background-size: cover;
+}
+
+.club-list-item .content {
+    @apply(--layout-flex);
+    float: left;
+}
+
+.club-list-item .title {
+    @apply(--paper-font-headline);
+}
+
+.club-list-item .city {
+    color: var(--paper-grey-600);
+    margin: 10px 0;
+}
+
+.club-list-item .image-wrapper {
+    overflow: hidden;
+    width: 88px;
+    position: relative;
+    background: #FFE57F;
+}
+
+.club-list-item .image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: auto;
+}
+
+.club-list-item paper-icon-button.club-list-item-icon {
+    --iron-icon-fill-color: white;
+    --iron-icon-stroke-color: var(--paper-grey-600);
+}
+
+#list-layer {
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+    transition: height 0.25s 0.10s, background-color 0.25s;
+    background-color: transparent;
+}
+
+body.list-mode #list-layer {
+    height: calc(100% - 56px);
+    transition: height 0.25s, background-color 0.5s 0.25s;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+body.map-mode #main-toolbar {
+    margin: 8px;
+    width: calc(100% - 16px);
+}
+
+#club-list {
+    height: 100%;
+    overflow: auto;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    position: relative;
+}
+</style>
