@@ -2,7 +2,9 @@
     "use strict";
     var list = document.querySelector("#club-list");
     var mapListButton = document.querySelector("#map-list-button");
+    var iframe = document.querySelector("iframe");
 
+    var mode = "map";
     var dataPromise;
 
     function getData() {
@@ -62,20 +64,6 @@
         }
     }
 
-    /* MAP */
-    function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: -34.397, lng: 150.644 },
-            scrollwheel: false,
-            zoom: 8
-        });
-    }
-
-    window.initMap = initMap;
-
-    var mode = "map";
-
     function mapListButtonListener() {
         if (mode === "map") {
             mapListButton.icon = "view-list";
@@ -92,6 +80,15 @@
 
     function addMapListButtonListener() {
         mapListButton.addEventListener("click", mapListButtonListener);
+    }
+    var messageHandler = function(event) {
+        console.log('Map script says hello.', event.data);
+    };
+
+    window.addEventListener('message', messageHandler);
+
+    function sendMessage(msg) {
+        iframe.contentWindow.sendMessage(msg, "*");
     }
 
     function init() {

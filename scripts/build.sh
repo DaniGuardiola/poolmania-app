@@ -13,11 +13,12 @@ vulcanize build/index.html --inline-script | crisper --html build/index.html --j
 rm -rf build/css/
 rm build/imports.html
 rm build/bower.json
-cd build/js/
-find . -type f -not -name 'background.js' -not -name 'build.js' | xargs rm
-cd ../../
 
 vulcanize build/map.html --inline-script | crisper --html build/map.html --js build/js/map.js
+
+cd build/js/
+find . -type f -not -name 'background.js' -not -name 'build.js' -not -name 'map.js' | xargs rm
+cd ../../
 
 rm -rf build/bower_components/
 
