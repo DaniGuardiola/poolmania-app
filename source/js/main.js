@@ -82,13 +82,41 @@
         mapListButton.addEventListener("click", mapListButtonListener);
     }
     var messageHandler = function(event) {
-        console.log('Map script says hello.', event.data);
+        var data = event.data;
+        if (data.type === "mapDataRequest") {
+            getMapData(data.bounds).then(function(result){
+                sendMessage({
+                    type: "mapData",
+                    result: result
+                });
+            });
+        }
     };
 
     window.addEventListener('message', messageHandler);
 
     function sendMessage(msg) {
-        iframe.contentWindow.sendMessage(msg, "*");
+        console.log(iframe.contentWindow);
+        iframe.contentWindow.postMessage(msg, "*");
+    }
+
+    function getMapData(bounds) {
+        return new Promise(function(resolve, reject) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "data/map.geojson?" +
+                "toplat=" + bounds.topRight.lat +
+                "&rightlng=" + bounds.topRight.lng +
+                "&bottomlat=" + bounds.bottomLeft.lat +
+                "&leftlng=" + bounds.bottomLeft.lng, true);
+            xhr.addEventListener("load", function(result) {
+                if (xhr.status === 200) {
+                    resolve(JSON.parse(result.target.response));
+                } else {
+                    reject(result);
+                }
+            });
+            xhr.send();
+        });
     }
 
     function init() {
